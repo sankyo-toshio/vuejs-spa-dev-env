@@ -1,3 +1,4 @@
+import MyBlog from './../template/pages/MyBlog.vue';
 import About from './../template/pages/About.vue';
 import ApiSample from './../template/pages/ApiSample.vue';
 import MDLSamples from './../template/pages/MDLSamples.vue';
@@ -7,6 +8,11 @@ import Credit from './../template/pages/Credit.vue';
 // SPAのルーティングを書くファイル
 
 export default [
+  {
+    name: 'MyBlog',
+    path: '/myblog',
+    component: MyBlog
+  },
   {
     name: 'about',
     path: '/about',

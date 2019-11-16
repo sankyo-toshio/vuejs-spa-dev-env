@@ -6,6 +6,7 @@
         <span class="mdl-layout-title">Vue.js SPA</span>
         <div class="mdl-layout-spacer"></div>
         <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <router-link to="/myblog" class="mdl-navigation__link">Myblog</router-link>
           <router-link to="/about" class="mdl-navigation__link">About</router-link>
           <router-link to="/api-sample" class="mdl-navigation__link">API Sample</router-link>
           <router-link to="/mdl-samples" class="mdl-navigation__link">MDL Samples</router-link>
@@ -18,6 +19,7 @@
     <div id="drawer" class="mdl-layout__drawer">
       <span class="mdl-layout-title">Vue.js SPA</span>
       <nav class="mdl-navigation">
+        <router-link to="/myblog" class="mdl-navigation__link">Myblog</router-link>
         <router-link to="/about" class="mdl-navigation__link">About</router-link>
         <router-link to="/api-sample" class="mdl-navigation__link">API Sample</router-link>
         <router-link to="/mdl-samples" class="mdl-navigation__link">MDL Samples</router-link>

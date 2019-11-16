@@ -32,7 +32,20 @@ module.exports = {
             postcss: 'vue-style-loader!css-loader!postcss-loader!sass-loader',
           },
         },
-      }
+      },
+      {
+        test: /\.md$/,
+        exclude: /(node_modules|bower_components)/,
+        use: [
+          'vue-loader',
+          {
+            loader: 'markdown-to-vue-loader',
+            options: {
+                exportSource: true    // この設定でMarkdownのRawデータを読み込めるようにする
+            },
+          },
+        ],
+      },
     ]
   }
 };
